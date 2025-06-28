@@ -114,7 +114,7 @@ export function TeamUpdatesView({ updates, summary, isLoading, onGenerateSummary
                     </Avatar>
                     <div className="flex-1 text-left">
                       <p className="font-semibold">{update.name}</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-muted-foreground" suppressHydrationWarning>
                         {new Date(update.createdAt).toLocaleString(undefined, {
                           dateStyle: 'medium',
                           timeStyle: 'short',
